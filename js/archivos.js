@@ -45,3 +45,12 @@ function enviarformulario(){
     error.innerHTML =  mensajesError.join(",<br>");
     return mensajesError.length === 0;
 };
+
+function validarPrimerNombre() {
+    const primerNombre = document.getElementById("primerNombre").value.trim();
+    if (primerNombre.length < 5 || primerNombre.length > 30) {
+      alert("El primer nombre debe tener entre 5 y 30 caracteres.");
+      return false;
+    }
+    return true;
+  }

@@ -42,7 +42,7 @@
             <div class="center ">
                 <h1>Formulario</h1>           
                     
-                <form id="formulario" action="#" method="post" onsubmit="return enviarformulario()">
+                <form id="formulario" action="#" method="post" onsubmit="return enviarformulario() && validarPrimerNombre()">
 
                     <label for="primerNombre">Primer Nombre:</label>
                     <input type="text" id="primerNombre" name="primerNombre" placeholder="Ingrese su primer nombre"><br>

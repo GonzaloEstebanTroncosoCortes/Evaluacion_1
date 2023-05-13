@@ -1,0 +1,16 @@
+#map {
+    height: 500px;
+    width: 100%;
+    display: none; /* Por defecto, el mapa está oculto */
+  }
+  
+  footer
+{
+    background-color: darkgray; 
+    text-align: center;
+}
+.icono
+{
+    margin-right: 5px;
+    display: inline-block;
+}

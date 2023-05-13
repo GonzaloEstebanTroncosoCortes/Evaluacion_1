@@ -1,7 +1,9 @@
 
+
+
 /* Estilos del formulario */
 #error{
-    color: red;
+    color: rgb(47, 47, 220);
     font-size: 30px;
     font-weight: bold;
 }
@@ -9,7 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  
 }
 
 .center {
@@ -21,7 +23,7 @@
   }
   
   #formulario {
-    max-width: 500px;
+    max-width: 1000px;
     width: 100%;
     padding: 0px;
     background-color: #f8f8f8;
@@ -63,6 +65,9 @@
     background-color: #31b0d5;
   }
 
+
+
+  
 footer
 {
     background-color: darkgray; 

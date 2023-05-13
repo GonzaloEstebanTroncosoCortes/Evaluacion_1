@@ -46,11 +46,32 @@ function enviarformulario(){
     return mensajesError.length === 0;
 };
 
-function validarPrimerNombre() {
+function validarPrimerNombreNumero() {
     const primerNombre = document.getElementById("primerNombre").value.trim();
     if (primerNombre.length < 5 || primerNombre.length > 30) {
       alert("El primer nombre debe tener entre 5 y 30 caracteres.");
       return false;
     }
     return true;
+    }
+  
+  function validarPrimerNombre() {
+    const primerNombre = document.getElementById("primerNombre").value.trim();
+    const soloLetras = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s.'-]+$/;
+    if (!soloLetras.test(primerNombre)) {
+      alert("El primer nombre no debe ser un número.");
+      return false;
+    }
+    return true;
   }
+
+function validarSegundoNombre() {
+    const segundoNombre = document.getElementById("segundoNombre").value.trim();
+    if (segundoNombre.length < 5 || segundoNombre.length > 30) {
+      alert("El segundo nombre debe tener entre 5 y 30 caracteres.");
+      return false;
+    }
+    return true;
+  }
+
+  

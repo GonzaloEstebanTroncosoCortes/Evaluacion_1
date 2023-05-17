@@ -14,3 +14,24 @@
     margin-right: 5px;
     display: inline-block;
 }
+h1
+{
+    font-size: 100px; 
+    text-align: center;
+    padding: 5px;
+    text-decoration: underline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: indianred;
+
+}
+#feriados
+{
+    font-size: 30px;
+    background-color: indianred;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: beige;
+    border-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}

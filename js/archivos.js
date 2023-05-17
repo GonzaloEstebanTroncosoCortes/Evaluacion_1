@@ -85,7 +85,7 @@ function validarSegundoNombreNumero() {
   }
 
   function validarPrimerApellidoNumero() {
-    const primerApellido = document.getElementById("primerApellido").value.trim();
+    const primerApellido = document.getElementById("apellidoPaterno").value.trim();
     if (primerApellido.length < 5 || primerApellido.length > 30) {
       alert("El Primer Apellido debe tener entre 5 y 30 caracteres.");
       return false;
@@ -104,7 +104,7 @@ function validarSegundoNombreNumero() {
   }
 
   function validarSegundoApellidoNumero() {
-    const segundoApellido = document.getElementById("segundoApellido").value.trim();
+    const segundoApellido = document.getElementById("apellidoMaterno").value.trim();
     if (segundoApellido.length < 5 || segundoApellido.length > 30) {
       alert("El Segundo Apellido debe tener entre 5 y 30 caracteres.");
       return false;
@@ -113,7 +113,7 @@ function validarSegundoNombreNumero() {
   }
 
   function validarSegundoApellido() {
-    const segundoApellido = document.getElementById("segundoApellido").value.trim();
+    const segundoApellido = document.getElementById("apellidoMaterno").value.trim();
     const soloLetras = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s.'-]+$/;
     if (!soloLetras.test(segundoApellido)) {
       alert("El Segundo Apellido no debe ser un número.");
@@ -122,3 +122,39 @@ function validarSegundoNombreNumero() {
     return true;
   }
 
+
+  function validarRut() {
+    const rut = document.getElementById("rut").value.trim();
+    if (rut.length < 8 || rut.length > 9) {
+      alert("El rut debe tener entre 8 y 9 caracteres.");
+      return false;
+    }
+    return true;
+  }
+
+  function validarDireccion() {
+    const direccion = document.getElementById("direccion").value.trim();
+    if (direccion.length < 6 || direccion.length > 30) {
+      alert("La direccion debe tener entre 6 y 30 caracteres.");
+      return false;
+    }
+    return true;
+  }
+
+  function validarCorreo() {
+    const correo = document.getElementById("correo").value.trim();
+    if (correo.length < 4 || correo.length > 30) {
+      alert("El correo debe tener entre 6 y 30 caracteres.");
+      return false;
+    }
+    return true;
+  }
+
+  function validarTelefono() {
+    const telefono = document.getElementById("telefono").value.trim();
+    if (telefono.length < 9 || telefono.length > 9) {
+      alert("El telefono debe tener 9 caracteres.");
+      return false;
+    }
+    return true;
+  }

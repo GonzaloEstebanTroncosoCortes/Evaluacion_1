@@ -65,7 +65,7 @@ function validarPrimerNombreNumero() {
     return true;
   }
 
-function validarSegundoNombre() {
+function validarSegundoNombreNumero() {
     const segundoNombre = document.getElementById("segundoNombre").value.trim();
     if (segundoNombre.length < 5 || segundoNombre.length > 30) {
       alert("El segundo nombre debe tener entre 5 y 30 caracteres.");
@@ -74,4 +74,51 @@ function validarSegundoNombre() {
     return true;
   }
 
+  function validarSegundoNombre() {
+    const segundoNombre = document.getElementById("segundoNombre").value.trim();
+    const soloLetras = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s.'-]+$/;
+    if (!soloLetras.test(segundoNombre)) {
+      alert("El segundo nombre no debe ser un número.");
+      return false;
+    }
+    return true;
+  }
+
+  function validarPrimerApellidoNumero() {
+    const primerApellido = document.getElementById("primerApellido").value.trim();
+    if (primerApellido.length < 5 || primerApellido.length > 30) {
+      alert("El Primer Apellido debe tener entre 5 y 30 caracteres.");
+      return false;
+    }
+    return true;
+  }
+
+  function validarPrimerApellido() {
+    const primerApellido = document.getElementById("primerApellido").value.trim();
+    const soloLetras = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s.'-]+$/;
+    if (!soloLetras.test(primerApellido)) {
+      alert("El Primer Apellido no debe ser un número.");
+      return false;
+    }
+    return true;
+  }
+
+  function validarSegundoApellidoNumero() {
+    const segundoApellido = document.getElementById("segundoApellido").value.trim();
+    if (segundoApellido.length < 5 || segundoApellido.length > 30) {
+      alert("El Segundo Apellido debe tener entre 5 y 30 caracteres.");
+      return false;
+    }
+    return true;
+  }
+
+  function validarSegundoApellido() {
+    const segundoApellido = document.getElementById("segundoApellido").value.trim();
+    const soloLetras = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s.'-]+$/;
+    if (!soloLetras.test(segundoApellido)) {
+      alert("El Segundo Apellido no debe ser un número.");
+      return false;
+    }
+    return true;
+  }
   

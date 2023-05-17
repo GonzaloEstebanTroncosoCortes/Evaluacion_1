@@ -85,8 +85,8 @@ function validarSegundoNombreNumero() {
   }
 
   function validarPrimerApellidoNumero() {
-    const primerApellido = document.getElementById("primerApellido").value.trim();
-    if (primerApellido.length < 5 || primerApellido.length > 30) {
+    const apellidoPaterno = document.getElementById("apellidoPaterno").value.trim();
+    if (apellidoPaterno.length < 5 || apellidoPaterno.length > 30) {
       alert("El Primer Apellido debe tener entre 5 y 30 caracteres.");
       return false;
     }
@@ -94,7 +94,7 @@ function validarSegundoNombreNumero() {
   }
 
   function validarPrimerApellido() {
-    const primerApellido = document.getElementById("primerApellido").value.trim();
+    const apellidoPaterno = document.getElementById("apellidoPaterno").value.trim();
     const soloLetras = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s.'-]+$/;
     if (!soloLetras.test(primerApellido)) {
       alert("El Primer Apellido no debe ser un número.");
@@ -104,8 +104,8 @@ function validarSegundoNombreNumero() {
   }
 
   function validarSegundoApellidoNumero() {
-    const segundoApellido = document.getElementById("segundoApellido").value.trim();
-    if (segundoApellido.length < 5 || segundoApellido.length > 30) {
+    const apellidoMaterno = document.getElementById("apellidoMaterno").value.trim();
+    if (apellidoMaterno.length < 5 || apellidoMaterno.length > 30) {
       alert("El Segundo Apellido debe tener entre 5 y 30 caracteres.");
       return false;
     }
@@ -113,9 +113,9 @@ function validarSegundoNombreNumero() {
   }
 
   function validarSegundoApellido() {
-    const segundoApellido = document.getElementById("segundoApellido").value.trim();
+    const apellidoMaterno = document.getElementById("apellidoMaterno").value.trim();
     const soloLetras = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s.'-]+$/;
-    if (!soloLetras.test(segundoApellido)) {
+    if (!soloLetras.test(apellidoMaterno)) {
       alert("El Segundo Apellido no debe ser un número.");
       return false;
     }

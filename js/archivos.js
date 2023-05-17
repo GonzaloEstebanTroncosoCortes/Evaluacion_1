@@ -102,3 +102,23 @@ function validarSegundoNombreNumero() {
     }
     return true;
   }
+
+  function validarSegundoApellidoNumero() {
+    const segundoApellido = document.getElementById("segundoApellido").value.trim();
+    if (segundoApellido.length < 5 || segundoApellido.length > 30) {
+      alert("El Segundo Apellido debe tener entre 5 y 30 caracteres.");
+      return false;
+    }
+    return true;
+  }
+
+  function validarSegundoApellido() {
+    const segundoApellido = document.getElementById("segundoApellido").value.trim();
+    const soloLetras = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s.'-]+$/;
+    if (!soloLetras.test(segundoApellido)) {
+      alert("El Segundo Apellido no debe ser un número.");
+      return false;
+    }
+    return true;
+  }
+

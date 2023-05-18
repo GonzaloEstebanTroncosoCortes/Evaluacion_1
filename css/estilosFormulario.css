@@ -27,7 +27,7 @@
   h1
   {
     text-align: center;
-    text-decoration: underline;
+    text-decoration: double;
     text-shadow: 5%;
     color: chocolate;
     font-size: 60px;
@@ -95,3 +95,4 @@ footer
   padding: 20px;
   margin-bottom: 15px;
 }
+
